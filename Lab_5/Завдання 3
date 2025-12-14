@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b, h, x, y;
+
+    cout << "Введіть a: ";
+    cin >> a;
+    cout << "Введіть b: ";
+    cin >> b;
+    cout << "Введіть h: ";
+    cin >> h;
+
+    x = a;
+
+    cout << "---------------------" << endl;
+    cout << "   X   |     Y       " << endl;
+    cout << "---------------------" << endl;
+
+    while (x <= b) {
+        y = x - 10;
+        cout << " " << x << "   |   " << y << endl;
+        x += h;
+    }
+
+    cout << "---------------------" << endl;
+    return 0;
+}
