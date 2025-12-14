@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Введіть трьохзначне додатнє число N: ";
+    cin >> N;
+
+    int a = N / 100;        // сотні
+    int b = (N / 10) % 10; // десятки
+    int c = N % 10;        // одиниці
+
+    int product = 1;
+    bool hasEven = false;
+
+    if (a % 2 == 0) {
+        product = a;
+        hasEven = true;
+    }
+    if (b % 2 == 0) {
+        product= b;
+        hasEven = true;
+    }
+    if (c % 2 == 0) {
+        product *= c;
+        hasEven = true;
+    }
+
+    if (hasEven) {
+        cout << "Добуток парних цифр = " << product;
+    } else {
+        cout << "Парних цифр немає";
+    }
+
+    return 0;
+}
