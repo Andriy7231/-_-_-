@@ -1,1 +1,21 @@
+#include <iostream>
+using namespace std;
 
+int main() {
+    int N;
+    cout << "Введіть трьохзначне число N: ";
+    cin >> N;
+
+    int a = N / 100;
+    int b = (N / 10) % 10;
+    int c = N % 10;
+
+    int count = 0;
+
+    if (a > 5) count++;
+    if (b > 5) count++;
+    if (c > 5) count++;
+
+    cout << "Кількість цифр більших за 5: " << count;
+    return 0;
+}
