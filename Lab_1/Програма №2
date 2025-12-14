@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b;
+    cout << "Введіть a і b: ";
+    cin >> a >> b;
+
+    double y = a * a + 2 * b;
+
+    cout << "y = " << y << endl;
+
+    return 0;
+}
