@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Введіть номер студента (1-7): ";
+    cin >> n;
+
+    switch (n) {
+        case 1:
+            cout << "Студент №1 — І.І.";
+            break;
+        case 2:
+            cout << "Студент №2 — П.П.";
+            break;
+        case 3:
+            cout << "Студент №3 — А.М.";
+            break;
+        case 4:
+            cout << "Студент №4 — К.О.";
+            break;
+        case 5:
+            cout << "Студент №5 — С.В.";
+            break;
+        case 6:
+            cout << "Студент №6 — Н.Д.";
+            break;
+        case 7:
+            cout << "Студент №7 — Л.А.";
+            break;
+        default:
+            cout << "Невірний номер студента";
+    }
+
+    return 0;
+}
